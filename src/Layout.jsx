@@ -1,5 +1,5 @@
 const Layout = () => {
-  return <h1>QR code generator</h1>;
+  return <p>QR code generator</p>;
 };
 
 export { Layout };

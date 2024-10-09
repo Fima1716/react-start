@@ -1,9 +1,9 @@
 import { QRCodeSVG } from "qrcode.react";
 import { useState } from "react";
-import "../src/QrCodeGenerator.css";
+import "./QrCodeGenerator.css";
 
 export const QrCodeGenerator = () => {
-  const [value, setValue] = useState("hello");
+  const [value, setValue] = useState("");
   const [result, setResult] = useState("");
 
   const onClickHandler = () => {
@@ -21,12 +21,12 @@ export const QrCodeGenerator = () => {
     <div>
       <input
         type="text"
-        placeholder="Введите текст..."
+        placeholder="Type here..."
         value={value}
         onChange={onChangeHandler}
       />
       <button type="button" onClick={onClickHandler}>
-        Сгенерировать QR
+        Generate QR
       </button>
       {result !== "" ? <QRCodeSVG size={200} value={result}></QRCodeSVG> : null}
     </div>

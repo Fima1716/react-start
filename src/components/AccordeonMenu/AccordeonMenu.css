@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.accordeon {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  height: 50px; /* Фиксированная высота аккордеона */
+  line-height: 50px; /* Выравнивание текста по вертикали */
+}
+
+.dropmenu {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-height: 0; /* Начальная высота */
+  overflow: hidden; /* Скрываем содержимое */
+  transition: max-height 0.3s ease; /* Переход для анимации */
+}
+
+.dropmenu.open {
+  max-height: 400px; /* Максимальная высота при открытии */
+}

@@ -1,16 +1,18 @@
 div {
   display: flex;
   flex-direction: column;
-  width: 60%;
-  height: 70%;
-  gap: 20px;
+  width: 80%;
+  height: 400px;
   align-items: center;
 }
 input {
   width: 40%;
+  margin-top: 20px;
 }
 
 button {
+  margin-top: 30px;
+  margin-bottom: 30px;
   width: 40%;
   background-color: black;
   color: white;
