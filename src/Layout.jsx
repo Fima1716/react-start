@@ -1,5 +1,5 @@
 const Layout = () => {
-  return <h1>Layout div text</h1>;
+  return <h1>QR code generator</h1>;
 };
 
 export { Layout };
